@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 
 const App = () => {
   return (
-    <div></div>
-  )
-}
+    <div className='bg-gray-50 min-h-screen'>
+      <>
+        <Navbar />
+        <hr className='border-gray-200' />
+        <div className='flex w-flex'>
+          <Sidebar />
+        </div>
+      </>
+    </div>
+  );
+};
 
-export default App
+export default App;
